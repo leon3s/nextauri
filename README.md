@@ -9,18 +9,23 @@ this project showcase how to implement nextjs with tauri
 clone this repository.
 
 you have access to multiple npm command:
+- start next development server
 ```sh
-npm run next dev # start next development server
+npm run next dev
 ```
+- build src-next directory for production
 ```sh
-npm run next-build # run next build for production
+npm run next-build
 ```
+- export the production build to dist directory
 ```sh
-npm run next-export # export the production build to dist directory
+npm run next-export
 ```
+- will run next-build and next-export
 ```sh
-npm run render-dist # will run next-build and next-export
+npm run render-dist
 ```
+- standard command to run tauri in development.
 ```sh
-npm run tauri dev # standard command to run tauri in development.
+npm run tauri dev
 ```
