@@ -1,15 +1,12 @@
 <div align="center">
   <h1>NEXTAURI</h1>
+  <h4>nextjs + tauri = ❤️</h4>
 
 <p>
-
 [![stars](https://img.shields.io/github/stars/leon3s/nextauri?style=social)](https://github.com/leon3s/nextauri) 
 [![Chat on Discord](https://img.shields.io/discord/1011267493114949693?label=chat&logo=discord)](https://discord.gg/WV4Aac8uZg)
 
 </p>
-
-<h4>nextjs + tauri = ❤️</h4>
-
 </div>
 
 
