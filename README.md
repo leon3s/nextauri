@@ -1,7 +1,7 @@
 <div align="center">
   <h1>NEXTAURI</h1>
-[![Chat on Discord](https://img.shields.io/discord/919288597826387979?label=chat&logo=discord)](https://discord.gg/WV4Aac8uZg)
 </div>
+[![Chat on Discord](https://img.shields.io/discord/919288597826387979?label=chat&logo=discord)](https://discord.gg/WV4Aac8uZg)
 
 Nextjs with Tauri starter
 
