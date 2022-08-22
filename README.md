@@ -45,7 +45,7 @@ It's will enable live reload for both.
 <blockquote>
 Note that tauri is waiting for an http server to be alive on localhost:3000
 
-You to start npm run next dev first.
+You have to start npm run next dev first.
 </blockquote>
 
 
@@ -60,7 +60,19 @@ npm run render-all
 
 This will build and export nextjs and build tauri for current environement.
 
-
 ## Advanced usage
 
-Look into `src-tauri/tauri.conf.json` to tweak the settings
+1.  If you just want render next you can use
+
+    ```sh
+    npm run render-next
+    ```
+
+2.  If you just want render tauri
+
+    ```sh
+    npm run render-tauri
+    ```
+
+Look into `src-tauri/tauri.conf.json` to tweak the settings,
+and refer to both nextjs and tauri documentation.
