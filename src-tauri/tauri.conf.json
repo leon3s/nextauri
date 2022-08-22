@@ -7,7 +7,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "wsl2-manager",
+    "productName": "nextauri",
     "version": "0.1.0"
   },
   "tauri": {
@@ -29,7 +29,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.nextauri.dev",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -55,12 +55,12 @@
     },
     "windows": [
       {
-        "transparent": true,
-        "decorations": false,
+        "transparent": false,
+        "decorations": true,
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "wsl2-manager",
+        "title": "nextauri",
         "width": 800
       }
     ]

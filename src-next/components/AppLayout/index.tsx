@@ -2,10 +2,14 @@ import React from 'react';
 
 import * as Style from './style';
 
-export default function AppLayout() {
+export type AppLayoutProps = {
+  children?: React.ReactNode;
+}
+
+export default function AppLayout(props: AppLayoutProps) {
   return (
     <Style.Container>
-      App layout.
+      {props.children}
     </Style.Container>
   )
 }

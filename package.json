@@ -1,11 +1,13 @@
 {
-  "name": "wsl2-manager",
+  "name": "nextauri",
   "scripts": {
     "tauri": "tauri",
-    "next": "next",
+    "next": "next src-next",
     "next-build": "next build src-next",
-    "next-export": "next export src-next dist",
-    "render-dist": "npm run next-build && npm run next-export"
+    "next-export": "next export src-next -o dist",
+    "render-next": "npm run next-build && npm run next-export",
+    "render-tauri": "npm run tauri build",
+    "render-all": "npm run render-next && npm run render-tauri"
   },
   "dependencies": {
     "@tauri-apps/api": "^1.0.0-rc.6",
