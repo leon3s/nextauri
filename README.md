@@ -8,7 +8,7 @@
 
 </p>
 
-A minimal tauri + next.js template, with typescript, styled components and GitHub Actions preconfigured.
+nextjs + tauri = ❤️
 
 </div>
 
