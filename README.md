@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>NEXTAURI</h1>
+  <h1>⚡ NEXTAURI ⚡</h1>
 
 <p>
 
