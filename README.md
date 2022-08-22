@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>⚡ NEXTAURI ⚡</h1>
+  <h1>NEXTAURI</h1>
 
 <p>
 
@@ -8,7 +8,7 @@
 
 </p>
 
-nextjs + tauri = ❤️
+<h4>nextjs + tauri = ❤️</h4>
 
 </div>
 
