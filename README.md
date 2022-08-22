@@ -10,10 +10,7 @@
 
 </div>
 
-Nextjs with Tauri starter
-
-This project showcase how to implement nextjs with typescript and styled-components for tauri
-
+A minimal tauri + next.js template, with typescript, styled components and GitHub Actions preconfigured.
 
 ## Installation
 
