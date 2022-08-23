@@ -65,7 +65,7 @@ You have to start npm run next dev first.
 ### Source structure
 
 - `src-next/` are where Next files are located
-- `src-tauri/` container Tauri source files.
+- `src-tauri/` contain Tauri source files.
 
 Please consult the [Next.js](https://nextjs.org/docs) and [Tauri](https://tauri.app/v1/guides/) documentation
 respectively for questions pertaining to either technology.
