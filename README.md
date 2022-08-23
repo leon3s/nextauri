@@ -15,7 +15,7 @@
 
 ## ❓ What is nextauri ?
 
-Nextauri for now is a small template to generate tauri project with nextjs along typescript and styled-components.
+Nextauri for now is a small template to generate tauri project with nextjs along typescript.
 </br>
 It doesn't come with linting and other stuff would you like to ?
 </br>
