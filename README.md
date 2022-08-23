@@ -12,7 +12,7 @@
 </div>
 
 
-## Installation
+## 📦 Installation
 
 
 1.  Clone or fork this repository
