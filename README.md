@@ -4,7 +4,8 @@
 
 <p>
 
-[![stars](https://img.shields.io/github/stars/leon3s/nextauri?style=social)](https://github.com/leon3s/nextauri) 
+[![stars](https://img.shields.io/github/stars/leon3s/nextauri?style=social)](https://github.com/leon3s/nextauri)
+[![Build With](https://img.shields.io/badge/built_with-Rust-dca282.svg)](https://github.com/nxthat/nanocld)
 [![Chat on Discord](https://img.shields.io/discord/1011267493114949693?label=chat&logo=discord)](https://discord.gg/WV4Aac8uZg)
 
 </p>
@@ -24,9 +25,15 @@
     npm install
     ```
 
+## ❓ What is nextauri ?
 
-## Developing
+Nextauri for now is a small template to generate tauri project with nextjs along typescript and styled-components.
+</br>
+It doesn't come with linting and other stuff would you like to ?
+</br>
+But it may become a CLI writen in rust to blazing fastly install any kind of nextjs template with tauri. 
 
+## 🎨 Developing
 
 To develop with nextauri you need to run 2 commands
 One to start nextjs in development mode and one to start tauri in development mode.
@@ -52,7 +59,7 @@ You have to start npm run next dev first.
 </blockquote>
 
 
-## Production
+## ⚡Production
 
 
 To build nextauri in production mode you can do it in a single command.
@@ -63,7 +70,7 @@ npm run render-all
 
 This will build and export nextjs and build tauri for current environement.
 
-## Advanced usage
+## 🔧 Advanced usage
 
 1.  If you just want render next you can use
 
@@ -77,5 +84,5 @@ This will build and export nextjs and build tauri for current environement.
     npm run render-tauri
     ```
 
-Look into `src-tauri/tauri.conf.json` to tweak the settings,
-and refer to both nextjs and tauri documentation.
+    Look into `src-tauri/tauri.conf.json` to tweak the settings,
+    and refer to both nextjs and tauri documentation.
