@@ -12,6 +12,14 @@
 </p>
 </div>
 
+## ❓ What is nextauri ?
+
+Nextauri for now is a small template to generate tauri project with nextjs along typescript and styled-components.
+</br>
+It doesn't come with linting and other stuff would you like to ?
+</br>
+But it may become a CLI writen in rust to blazing fastly install any kind of nextjs template with tauri. 
+
 
 ## 📦 Installation
 
@@ -26,15 +34,9 @@
     npm install
     ```
 
-## ❓ What is nextauri ?
-
-Nextauri for now is a small template to generate tauri project with nextjs along typescript and styled-components.
-</br>
-It doesn't come with linting and other stuff would you like to ?
-</br>
-But it may become a CLI writen in rust to blazing fastly install any kind of nextjs template with tauri. 
 
 ## 🎨 Developing
+
 
 To develop with nextauri you need to run 2 commands
 One to start nextjs in development mode and one to start tauri in development mode.
@@ -71,7 +73,9 @@ npm run render-all
 
 This will build and export nextjs and build tauri for current environement.
 
+
 ## 🔧 Advanced usage
+
 
 1.  If you just want render next you can use
 
