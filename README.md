@@ -1,13 +1,15 @@
 <div align="center">
   <h1>NEXTAURI</h1>
-  <h4>nextjs + tauri = ❤️</h4>
+  <h3>❤️ nextjs + tauri = nextauri ❤️</h3>
 
 <p>
+
 
 [![stars](https://img.shields.io/github/stars/leon3s/nextauri?style=social)](https://github.com/leon3s/nextauri)
 [![Build With](https://img.shields.io/badge/built_with-Rust-dca282.svg)](https://github.com/leon3s/nextauri)
 [![Build With](https://img.shields.io/badge/built_with-Typescript-3178C6.svg)](https://github.com/leon3s/nextauri)
 [![Chat on Discord](https://img.shields.io/discord/1011267493114949693?label=chat&logo=discord)](https://discord.gg/WV4Aac8uZg)
+
 
 </p>
 <img src="https://download.next-hat.com/ressources/images/nextauri.png" />
@@ -17,9 +19,7 @@
 
 Nextauri for now is a small template to generate tauri project with nextjs along typescript.
 </br>
-It doesn't come with linting and other stuff would you like to ?
-</br>
-But it may become a CLI writen in rust to blazing fastly install any kind of nextjs template with tauri. 
+But it may become a CLI writen in rust to blazing fastly install any kind of nextjs template with tauri.
 
 
 ## 📦 Installation
