@@ -1,0 +1,28 @@
+.home-block-anchor {
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid #E9EBEE;
+  padding: 0px 8px;
+  width: 200px;
+  height: fit-content;
+  color: black;
+}
+
+.home-block-anchor:hover {
+  transform: scale(1.1);
+  background-color: #E5E7EB;
+}
+
+.home-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-block-title {
+  font-size: 18px;
+  margin: 8px 0px 0px 0px;
+}
+
+.home-block-description {
+  font-size: 16px;
+}

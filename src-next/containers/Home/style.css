@@ -1,0 +1,39 @@
+.home-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-title {
+  margin: 40px;
+}
+
+.get-started {
+  font-size: 18px;
+}
+
+.get-started-span {
+  background-color: #E5E7EB;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.anchor-nextauri {
+  text-decoration: none;
+  color: blue;
+}
+
+.home-blocks {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1 1 150px;
+  gap: 24px;
+}
