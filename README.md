@@ -19,7 +19,7 @@
 
 Nextauri for now is a small template to generate tauri project with nextjs along typescript.
 </br>
-But it may become a CLI writen in rust to blazing fastly install any kind of nextjs template with tauri.
+But it may become a CLI writen in rust to install any kind of nextjs template with tauri.
 
 
 ## 📦 Installation
