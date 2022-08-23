@@ -62,6 +62,13 @@ Note that tauri is waiting for an http server to be alive on localhost:3000
 You have to start npm run next dev first.
 </blockquote>
 
+### Source structure
+
+Next.js frontend source files are located in `src-next/` while Tauri Rust application source
+files are located in `src-tauri/`.
+</br>
+Please consult the Next.js and Tauri documentation
+respectively for questions pertaining to either technology.
 
 ## ⚡Production
 
@@ -91,13 +98,7 @@ and refer to tauri documentation for more information.
     npm run render-tauri
     ```
 
-### Source structure
-
-Next.js frontend source files are located in `src-next/` while Tauri Rust application source
-files are located in `src-tauri/`. Please consult the Next.js and Tauri documentation
-respectively for questions pertaining to either technology.
-
-## Caveats
+## ⚠️ Caveats
 
 ### Static Site Generation / Pre-rendering
 
@@ -236,7 +237,7 @@ export async function invoke<T>(
 Then, instead of importing `import { invoke } from "@tauri-apps/api/tauri"`, use invoke
 from `import { invoke } from "@/lib/tauri"`.
 
-## Learn More
+## 📙 Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
