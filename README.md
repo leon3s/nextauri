@@ -10,6 +10,7 @@
 [![Chat on Discord](https://img.shields.io/discord/1011267493114949693?label=chat&logo=discord)](https://discord.gg/WV4Aac8uZg)
 
 </p>
+<img src="https://download.next-hat.com/ressources/images/nextauri.png" />
 </div>
 
 ## ❓ What is nextauri ?
