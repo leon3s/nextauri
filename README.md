@@ -112,7 +112,7 @@ and refer to tauri documentation for more information.
     as follow:
     ```json
     "beforeBuildCommand": "npm run render-next"
-    "beforeDevCommand": "npm run dev"
+    "beforeDevCommand": "npm run next dev"
     ```
     So you can use only tauri commands to run in development and to build
  
