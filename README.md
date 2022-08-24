@@ -56,10 +56,10 @@ It's will enable live reload for both.
 
 <blockquote>
 Note that tauri is waiting for an http server to be alive on localhost:3000
-
-Witch is the default next port while running in development
-
-That why you have to start npm run next dev first.
+</br>
+Witch is the default nextjs port while running in development
+</br>
+That why you have to start npm run next dev first
 </blockquote>
 
 ### Source structure
@@ -115,3 +115,12 @@ and refer to tauri documentation for more information.
     "beforeDevCommand": "npm run dev"
     ```
     So you can use only tauri commands to run in development and to build
+ 
+    -   For development
+        ```sh
+        npm run tauri dev
+        ```
+    -   For production build
+        ```sh
+        npm run tauri build
+        ```
