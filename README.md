@@ -17,9 +17,7 @@
 
 ## ❓ What is nextauri ?
 
-Nextauri for now is a small template to generate tauri project with nextjs along typescript.
-</br>
-But it may become a CLI writen in rust to install any kind of nextjs template with tauri.
+Nextauri is your minimal template for create cross platform application using tauri with nextjs.
 
 
 ## 📦 Installation
@@ -59,7 +57,9 @@ It's will enable live reload for both.
 <blockquote>
 Note that tauri is waiting for an http server to be alive on localhost:3000
 
-You have to start npm run next dev first.
+Witch is the default next port while running in development
+
+That why you have to start npm run next dev first.
 </blockquote>
 
 ### Source structure
@@ -97,3 +97,21 @@ and refer to tauri documentation for more information.
     ```sh
     npm run render-tauri
     ```
+
+3.  If you want to change port
+    You can run next dev command as follow
+    ```sh
+    npm run next dev 8080
+    ```
+    Then you have to edit `src-tauri/tauri.conf.json` to use the new port
+    ```json
+    "devPath": "http://localhost:8080"
+    ```
+
+4.  Optionally add next dev and build command inside `src-tauri/tauri.conf.json`
+    as follow:
+    ```json
+    "beforeBuildCommand": "npm run render-next"
+    "beforeDevCommand": "npm run dev"
+    ```
+    So you can use only tauri commands to run in development and to build
