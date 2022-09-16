@@ -1,18 +1,26 @@
 <div align="center">
-  <h1>NEXTAURI</h1>
+  <h1>Nextauri</h1>
   <h3>❤️ Next.js + Tauri = Nextauri ❤️</h3>
+
 
 <p>
 
 
-[![stars](https://img.shields.io/github/stars/leon3s/nextauri?style=social)](https://github.com/leon3s/nextauri)
-[![Build With](https://img.shields.io/badge/built_with-Rust-dca282.svg)](https://github.com/leon3s/nextauri)
-[![Build With](https://img.shields.io/badge/built_with-Typescript-3178C6.svg)](https://github.com/leon3s/nextauri)
-[![Chat on Discord](https://img.shields.io/discord/1011267493114949693?label=chat&logo=discord)](https://discord.gg/WV4Aac8uZg)
-
-
+<a href="https://github.com/leon3s/nextauri">
+  <img src="https://img.shields.io/github/stars/leon3s/nextauri?style=social" />
+</a>
+<a href="https://github.com/leon3s/nextauri">
+  <img src="https://img.shields.io/badge/built_with-Rust-dca282.svg" />
+</a>
+<a href="https://github.com/leon3s/nextauri">
+  <img src="https://img.shields.io/badge/built_with-Typescript-3178C6.svg" />
+</a>
+<a href="https://discord.gg/WV4Aac8uZg">
+  <img src="https://img.shields.io/discord/1011267493114949693?label=chat&logo=discord" />
+</a>
 </p>
 <img src="https://download.next-hat.com/ressources/images/nextauri.png" />
+
 </div>
 
 ## ❓ What is Nextauri ?
