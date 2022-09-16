@@ -1,6 +1,6 @@
 lsi: false
 safe: true
-theme: minima
+theme: hacker
 incremental: false
 highlighter: rouge
 gist:
