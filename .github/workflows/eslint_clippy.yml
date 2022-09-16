@@ -5,7 +5,7 @@ name: Eslint & Clippy
 on: [push, pull_request]
 
 jobs:
-  build:
+  eslint_and_clippy:
     strategy:
       fail-fast: true
     runs-on: ubuntu-latest
@@ -19,17 +19,17 @@ jobs:
         with:
           node-version: 16
      
-     - name: Install Rust with Clippy
+      - name: Install Rust with Clippy
         uses: dtolnay/rust-toolchain@stable
         with:
           components: rustfmt, clippy
 
-     - name: Install Tauri dependencies
+      - name: Install Tauri dependencies
         run: |
           sudo apt-get update
           sudo apt install libdbus-1-dev libwebkit2gtk-4.0-dev build-essential curl wget libssl-dev libgtk-3-dev libayatana-appindicator3-dev librsvg2-dev
 
-     - name: Create empty 'dist' directory for Tauri generate context
+      - name: Create empty 'dist' directory for Tauri generate context
         run: mkdir dist
  
       - name: Install node dependencies
