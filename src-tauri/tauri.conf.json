@@ -1,8 +1,8 @@
 {
   "$schema": "..\\node_modules/@tauri-apps/cli\\schema.json",
   "build": {
-    "beforeBuildCommand": "",
-    "beforeDevCommand": "",
+    "beforeBuildCommand": "npm run next-build && npm run next-export",
+    "beforeDevCommand": "npm run next dev",
     "devPath": "http://localhost:3000",
     "distDir": "../dist"
   },
@@ -29,7 +29,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.das.dev",
       "longDescription": "",
       "macOS": {
         "entitlements": null,

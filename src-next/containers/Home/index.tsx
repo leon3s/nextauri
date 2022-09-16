@@ -21,7 +21,7 @@ const Home = () => (
   <div className='home-container'>
     <div className='home-header'>
       <h1 className='home-title'>
-        Welcome to <a className='anchor-nextauri' href="https://github.com/leon3s/nextauri">Nextauri</a>
+        Welcome to <a className='anchor-nextauri' rel="noreferrer" target="_blank" href="https://github.com/leon3s/nextauri">Nextauri</a>
       </h1>
       <p className='get-started'>
         Get started by editing <span className='get-started-span'>src-next/pages/index.tsx</span>

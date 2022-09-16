@@ -1,13 +1,13 @@
 {
   "name": "nextauri",
   "scripts": {
+    "dev": "tauri dev",
     "tauri": "tauri",
+    "lint": "next lint src-next",
     "next": "next src-next",
+    "clippy": "cargo clippy --manifest-path ./src-tauri/Cargo.toml",
     "next-build": "next build src-next",
-    "next-export": "next export src-next -o dist",
-    "render-next": "npm run next-build && npm run next-export",
-    "render-tauri": "npm run tauri build",
-    "render-all": "npm run render-next && npm run render-tauri"
+    "next-export": "next export src-next -o dist"
   },
   "dependencies": {
     "@tauri-apps/api": "^1.0.2",
@@ -20,6 +20,8 @@
     "@types/node": "^18.7.18",
     "@types/react": "^18.0.20",
     "@types/react-dom": "^18.0.6",
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.0",
     "typescript": "^4.8.3"
   }
 }
