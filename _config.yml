@@ -1,6 +1,6 @@
 lsi: false
 safe: true
-source: [your repo's top level directory]
+theme: minima
 incremental: false
 highlighter: rouge
 gist:
