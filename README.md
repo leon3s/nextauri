@@ -5,10 +5,12 @@
 
 <p>
 
+
 [![Stars](https://img.shields.io/github/stars/leon3s/nextauri?style=social)](https://github.com/leon3s/nextauri)
 [![Rust](https://img.shields.io/badge/built_with-Rust-dca282.svg)](https://github.com/leon3s/nextauri)
 [![Typescript](https://img.shields.io/badge/built_with-Typescript-3178C6.svg)](https://github.com/leon3s/nextauri)
 [![Discord](https://img.shields.io/discord/1011267493114949693?label=chat&logo=discord)](https://discord.gg/WV4Aac8uZg)
+
 
 </p>
 
