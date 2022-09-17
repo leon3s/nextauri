@@ -21,13 +21,13 @@ jobs:
       - uses: actions/cache@v3
         with:
           path: ./src-tauri/target
-          key: ${{ hashFiles('./src-tauri/Cargo.lock') }}
+          key: ${{matrix.os}}-${{ hashFiles('./src-tauri/Cargo.lock') }}
       
       # Cache node
       - uses: actions/cache@v3
         with:
           path: ./node_modules
-          key: ${{ hashFiles('./package-lock.json') }}
+          key: ${{matrix.os}}-${{ hashFiles('./package-lock.json') }}
 
       - name: Install Node.js v16 LTS
         uses: actions/setup-node@v3
