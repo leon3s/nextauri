@@ -48,11 +48,9 @@ As recommanded by the community, Nextauri come with the best practice features s
 
 Tauri is great to make secure cross platform application backed by `Rust` ! <br />
 It will load an `HTML` page inside a `Webview` and give the ability to do system call with `IPC`. <br />
-If you are familliar with `electron` you can see it as a very good replacement with smaller bundler size and memory usage.
+If you are familliar with `electron` or `nextron` you can see it as a very good replacement with smaller bundle size, smaller memory usage and more secure.
 
-That make Next.js the perfect fit for bundle React application with Tauri since it comes with great Static-Site Generation (SSG) capability.
-
-To make Next.js work with Tauri we are going to use the `SSG` mode since it generates static files that will be included in the final binary.
+That make Next.js the perfect fit for bundle React application with Tauri since it comes with great Static-Site Generation `SSG` capability that will allow us to generates static files that will be included in the final binary.
 
 The `benefit` of using Next.js `SSG` mode is pre-rendered React code in static HTML/JavaScript. <br /> This means your app will load faster. <br />
 React doesn't have to render the `HTML` on the client-side but will hydrate it on the first load if needed.
@@ -100,12 +98,9 @@ You can modify the port by updating `src-tauri/tauri.conf.json`. <br />
 - `src-next/` are where Next.js files are located.
 - `src-tauri/` contain Tauri source files.
 
-Please consult the [Next.js](https://nextjs.org/docs) and [Tauri](https://tauri.app/v1/guides/) documentation
-respectively for questions pertaining to either technology.
-
 ## 🧪 Testing
 
-To test your application we recommand you to use [Cypress](https://www.cypress.io) using [Tauri](https://tauri.app/v1/guides/testing/mocking) mocking technique.
+To test your application we recommand you to use [Cypress](https://www.cypress.io) using Tauri [mocking technique](https://tauri.app/v1/guides/testing/mocking).
 
 If you want me to add `Cypress` as part of the template react to this [discution](https://github.com/leon3s/nextauri/discussions/19)
 
@@ -126,7 +121,7 @@ and refer to [Tauri](https://tauri.app/v1/guides/building) building documentatio
 
 ## ⚠️ Warning
 
-If you are new to Next.js beware When working with it in development ! <br />
+If you are new to Next.js beware when working with it in development ! <br />
 It will start a `Nodejs` server in background in order to have `HMR` (Hot Module Replacement) capability but also `SSR` (Server Side Rendering).
 That mean your React/Typescript code have two execution context :
 
@@ -159,7 +154,7 @@ isClient &&
   invoke('greet', { name: 'World' }).then(console.log).catch(console.error)
 ```
 
-2. Dynamic Component
+2. Dynamic component
 
 `src-next/components/MyComponent.tsx`
 ```tsx
