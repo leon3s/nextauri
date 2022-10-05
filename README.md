@@ -102,7 +102,7 @@ You can modify the `port` by updating `src-tauri/tauri.conf.json`. <br />
 
 To test your application we recommand you to use [Cypress](https://www.cypress.io) using Tauri [mocking technique](https://tauri.app/v1/guides/testing/mocking).
 
-If you want me to add `Cypress` as part of the template react to this [discution](https://github.com/leon3s/nextauri/discussions/19)
+If you want me to add `Cypress` as part of the template react to this [discussion](https://github.com/leon3s/nextauri/discussions/19).
 
 You may also want to take a look to pre-alpha [WebDriver Testing](https://tauri.app/v1/guides/testing/webdriver/introduction) from Tauri.
 
