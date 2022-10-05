@@ -83,10 +83,10 @@ npm run dev
 
 This will start both Tauri and Next.js in development mode.
 
-> Note that tauri is waiting for an http server to be alive on localhost:3000.
-> It's the default Next.js port while running in development
+> Note that tauri is waiting for an http server to be alive on localhost:3000. <br />
+> It's the default Next.js `port` while running in development
 
-You can modify the port by updating `src-tauri/tauri.conf.json`. <br />
+You can modify the `port` by updating `src-tauri/tauri.conf.json`. <br />
 
 ```json
 "beforeDevCommand": "npm run next dev -- -p 8080",
