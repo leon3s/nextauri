@@ -140,7 +140,8 @@ Since we use the `SSG` feature from Next.js no Node.js server will be packaged i
 ```
 referenceError: navigator is not defined
 ```
-This error can orcur when importing `@tauri-apps/api` for example
+
+This error can orcur when importing `@tauri-apps/api` for example. <br />
 There is 2 workarounds that you can use :
 
 1. Is client method
