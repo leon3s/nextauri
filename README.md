@@ -27,24 +27,41 @@
 
 ## ❓ What is Nextauri ?
 
-Nextauri is your favorite template for create cross-platform application using Tauri with Next.js.
-It came with minimal best practice setup so you can add anything fit your need.
-You can it use to develop `Windows`, `Linux` and `Mac` desktop application.
-But Tauri plan to have also a mobile compatibility in the futur.
+Nextauri is your favorite template for create cross-platform application using Tauri with Next.js. <br />
+It came with minimal best practice setup so you can add anything fit your need. <br />
+You can it use to develop `Windows`, `Linux` and `Mac` desktop application. <br />
+But Tauri plan to have a mobile compatibility in the futur !
+
+## 💡 Features
+
+As recommanded by the community, Nextauri come with the best practice features such as :
+
+-   Recommanded Eslint when working with Next.js
+-   Recommanded Clippy when working with Tauri
+-   Github workflow when pushing and creating pull request for :
+    * Lint your Next.JS project with Eslint
+    * Lint your Tauri project with Clippy
+    * Build your application for `Linux`, `Windows` and `Mac`
+-   Weekly dependencies update
 
 ## 💪 Motivation
 
-Tauri is great to make cross platform application backed by `Rust`
-It will load an `HTML` page and add native binding on his context.
+Tauri is great to make secure cross platform application backed by `Rust` ! <br />
+It will load an `HTML` page inside a `Webview` and give the ability to do system call with `IPC`. <br />
+If you are familliar with `electron` you can see it as a very good replacement with smaller bundler size and memory usage.
 
-Next.js is the perfect fit for bundle React application with Tauri it comes with both Server-Side Rendering (SSR) and Static-Site Generation (SSG) capabilities.
+That make Next.js the perfect fit for bundle React application with Tauri since it comes with great Static-Site Generation (SSG) capability.
 
 To make Next.js work with Tauri we are going to use the `SSG` mode since it generates static files that will be included in the final binary.
 
-The `benefit` of using Next.js `SSG` mode is pre-rendered React code in static HTML/JavaScript. This means your app will load faster. React doesn't have to render the `HTML` on the client-side but will hydrate it on the first load if needed.
+The `benefit` of using Next.js `SSG` mode is pre-rendered React code in static HTML/JavaScript. <br /> This means your app will load faster. <br />
+React doesn't have to render the `HTML` on the client-side but will hydrate it on the first load if needed.
 
-The `downside` is that we cannot use `getServerSideProps` or use any type of `data fetching` for rendering our page.
-Instead we can use `getStaticProps` to generate our page at build time.
+The `downside` is that we cannot use `getServerSideProps` or use any type of `data fetching` for rendering our page for a request. <br />
+Instead we will use `getStaticProps` to generate our page at build time. <br />
+
+Note that if you still want the power of `Rust` for generate your page you may have a look at [Neon](https://neon-bindings.com). <br />
+It will allow you to call `Rust` code from Node.js !
 
 ## 📦 Installation
 
@@ -66,10 +83,13 @@ To get started you only need one command
 npm run dev
 ```
 
-> Note that tauri is waiting for an http server to be alive on localhost:3000.
-> Tt's the default Next.js port while running in development
+This will start both Tauri and Next.js in development mode.
 
-You can modify it by updating `src-tauri/tauri.conf.json`
+> Note that tauri is waiting for an http server to be alive on localhost:3000.
+> It's the default Next.js port while running in development
+
+You can modify the port by updating `src-tauri/tauri.conf.json`. <br />
+
 ```json
 "beforeDevCommand": "npm run next dev -- -p 8080",
 "devPath": "http://localhost:8080",
@@ -83,35 +103,50 @@ You can modify it by updating `src-tauri/tauri.conf.json`
 Please consult the [Next.js](https://nextjs.org/docs) and [Tauri](https://tauri.app/v1/guides/) documentation
 respectively for questions pertaining to either technology.
 
+## 🧪 Testing
+
+To test your application we recommand you to use [Cypress](https://www.cypress.io) using [Tauri](https://tauri.app/v1/guides/testing/mocking) mocking technique.
+
+If you want me to add `Cypress` as part of the template react to this [discution](https://github.com/leon3s/nextauri/discussions/19)
+
+You may also want to take a look to pre-alpha [WebDriver Testing](https://tauri.app/v1/guides/testing/webdriver/introduction) from Tauri.
+
 ## ⚡Production
 
 To build in production you can do it in a single command.
-This will build and export Next.js and build Tauri for current the environement.
+This will build and export Next.js and build Tauri for your current environnement.
 
 ```sh
 npm run tauri build
 ```
 
 Look into `src-tauri/tauri.conf.json` to tweak the settings,
-and refer to [Tauri](https://tauri.app/v1/guides/) documentation for more information.
+and refer to [Tauri](https://tauri.app/v1/guides/building) building documentation for more information.
 
 
-## 👀 Look out
+## ⚠️ Warning
 
-When working with Next.js in development
-it will start a `Nodejs` server in background in order to have `HMR` (Hot Module Replacement) capability but also `SSR` (Server Side Rendering).
+If you are new to Next.js beware When working with it in development ! <br />
+It will start a `Nodejs` server in background in order to have `HMR` (Hot Module Replacement) capability but also `SSR` (Server Side Rendering).
 That mean your React/Typescript code have two execution context :
-1.  On the server
+
+1.  On the `Server`
+    - Code is executed by Node.js runtime.
     - There is no notion of `window` or `navigator` it's part of `Browser API`
-    - You cannot call `Tauri API` in this context since Tauri do his injection on the `Browser` side
-2.  On the client
+    - You cannot call `Tauri API` in this context since Tauri injection happen in the `Browser` side
+
+2.  On the `Browser`
+    - Code is executed by the Tauri `Webview`
     - `Tauri API` will work fine and any other `Browser API` package `d3.js` for example
+
+Note that your production code will alway be running in a `Browser` side context. <br />
+Since we use the `SSG` feature from Next.js no Node.js server will be packaged in production.
 
 ```
 referenceError: navigator is not defined
 ```
 This error can orcur when importing `@tauri-apps/api` for example
-There is 3 workaround that you can use:
+There is 2 workarounds that you can use :
 
 1. Is client method
 
