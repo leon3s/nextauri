@@ -144,43 +144,44 @@ referenceError: navigator is not defined
 This error can orcur when importing `@tauri-apps/api` for example. <br />
 There is 2 workarounds that you can use :
 
-1. Is client method
+1.  Dynamic component method
 
-```js
-import { invoke } from '@tauri-apps/api/tauri'
+    -   Create your component
+        ```tsx
+        import React from 'react'
 
-const isClient = typeof window !== 'undefined'
+        import { window } from '@tauri-apps/api';
 
-isClient &&
-  invoke('greet', { name: 'World' }).then(console.log).catch(console.error)
-```
+        const { appWindow } = window;
 
-2. Dynamic component
+        export default function MyComponent() {
+          <div>
+            {appWindow.label}
+          </div>
+        }
+        ```
 
-`src-next/components/MyComponent.tsx`
-```tsx
-import React from 'react'
+    -   Import your component
+        ```tsx
+        import dynamic from "next/dynamic";
 
-import { window } from '@tauri-apps/api';
+        const MyComponent = dynamic(() => import("./path/to/my/component"), {
+          ssr: false,
+        });
 
-const { appWindow } = window;
+        ```
 
-export default function MyComponent() {
-  <div>
-    {appWindow.label}
-  </div>
-}
-```
+1.  Is browser method
 
-`index.tsx`
-```tsx
-import dynamic from "next/dynamic";
+    ```js
+    import { invoke } from '@tauri-apps/api/tauri'
 
-const MyComponent = dynamic(() => import("../components/MyComponent"), {
-  ssr: false,
-});
+    const isBrowser = typeof window !== 'undefined'
 
-```
+    if (isBrowser) {
+      /// Code will only execute on browser side
+    }
+    ```
 
 In general to safely invoke `Tauri API` you should use it in `componentDidMount`, `useEffect` or on user based `events` that will be alway executed in client side.
 
