@@ -27,7 +27,7 @@
 
 ## ❓ What is Nextauri ?
 
-Nextauri is your favorite template for create cross-platform application using Tauri with Next.js. <br />
+Nextauri is your favorite template for create cross-platform application using `Tauri` with `Next.js`. <br />
 It came with minimal best practice setup so you can add anything fit your need. <br />
 You can it use to develop `Windows`, `Linux` and `Mac` desktop application. <br />
 But Tauri plan to have a mobile compatibility in the futur !
@@ -63,12 +63,16 @@ It will allow you to call `Rust` code from Node.js !
 
 ## 📦 Installation
 
-1.  Clone or fork this repository
+Be sure you have [NodeJS](https://nodejs.org/en/) and [Rust](https://www.rust-lang.org/) installed on your system
+
+1.  See Tauri [prerequisites](https://tauri.app/v1/guides/getting-started/prerequisites/) to prepare your system to build `Tauri`
+
+2.  Clone or fork this repository
     ```sh
     git clone https://github.com/leon3s/nextauri
     cd nextauri
     ```
-2.  Install node dependencies
+3.  Install node dependencies
     ```sh
     npm install
     ```
