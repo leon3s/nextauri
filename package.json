@@ -10,7 +10,7 @@
     "next-export": "next export src-next -o dist"
   },
   "dependencies": {
-    "@tauri-apps/api": "^1.1.0",
+    "@tauri-apps/api": "^1.2.0",
     "next": "^13.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
