@@ -34,18 +34,18 @@ jobs:
         with:
           path: ./node_modules
           key: ${{matrix.os}}-${{ hashFiles('./package-lock.json') }}
-      
+
       # Cache Next.js
       - uses: actions/cache@v3
         with:
           path: ./src-next/.next
           key: ${{matrix.os}}
 
-      - name: Install Node.js v16 LTS
+      - name: Install Node.js v20.9.0 LTS
         uses: actions/setup-node@v3
         with:
           node-version: 20.9.0
-     
+
       - name: Install Rust with Clippy
         uses: dtolnay/rust-toolchain@stable
         with:
@@ -56,11 +56,9 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt install libdbus-1-dev libwebkit2gtk-4.0-dev build-essential curl wget libssl-dev libgtk-3-dev libayatana-appindicator3-dev librsvg2-dev
- 
+
       - name: Install node dependencies
         run: npm install
 
       - name: Build application
         run: npm run tauri build
-
- 
