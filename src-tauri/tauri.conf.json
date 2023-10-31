@@ -1,7 +1,7 @@
 {
   "$schema": "..\\node_modules/@tauri-apps/cli\\schema.json",
   "build": {
-    "beforeBuildCommand": "npm run next-build && npm run next-export",
+    "beforeBuildCommand": "npm run next-build",
     "beforeDevCommand": "npm run next dev",
     "devPath": "http://localhost:3000",
     "distDir": "../dist"

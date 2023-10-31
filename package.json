@@ -6,12 +6,11 @@
     "lint": "next lint src-next",
     "next": "next src-next",
     "clippy": "cargo clippy --manifest-path ./src-tauri/Cargo.toml",
-    "next-build": "next build src-next",
-    "next-export": "next export src-next -o dist"
+    "next-build": "next build src-next"
   },
   "dependencies": {
-    "@tauri-apps/api": "^1.5.0",
-    "next": "^13.5.6",
+    "@tauri-apps/api": "^1.5.1",
+    "next": "^14.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -19,7 +18,7 @@
     "@tauri-apps/cli": "^1.5.6",
     "@types/node": "^20.8.9",
     "@types/react": "^18.2.33",
-    "@types/react-dom": "^18.2.13",
+    "@types/react-dom": "^18.2.14",
     "eslint": "8.52.0",
     "eslint-config-next": "14.0.1",
     "typescript": "^5.2.2"
