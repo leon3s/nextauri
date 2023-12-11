@@ -35,7 +35,7 @@ jobs:
       - name: Install Node.js v16 LTS
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 20
      
       - name: Install Rust with Clippy
         uses: dtolnay/rust-toolchain@stable
