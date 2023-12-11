@@ -41,10 +41,10 @@ jobs:
           path: ./src-next/.next
           key: ${{matrix.os}}
 
-      - name: Install Node.js v20.9.0 LTS
+      - name: Install Node.js v20 LTS
         uses: actions/setup-node@v3
         with:
-          node-version: 20.9.0
+          node-version: 20
 
       - name: Install Rust with Clippy
         uses: dtolnay/rust-toolchain@stable
