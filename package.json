@@ -9,7 +9,7 @@
     "next-build": "next build src-next"
   },
   "dependencies": {
-    "@tauri-apps/api": "^1.6.0",
+    "@tauri-apps/api": "^2.0.2",
     "next": "^14.2.13",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
