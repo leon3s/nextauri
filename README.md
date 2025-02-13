@@ -40,7 +40,7 @@ Nextauri integrates community-endorsed best practices with powerful tooling out 
 - Rust best practices enforced through Clippy linter for Tauri
 
 ### Automated CI/CD Pipeline
-- GitHub Actions workflows that trigger on:
+- GitHub Actions workflows that trigger on pushing and creating pull request:
   - Next.js project linting with ESLint
   - Tauri project analysis with Clippy
   - Production builds for all platforms:
