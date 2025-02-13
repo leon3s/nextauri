@@ -32,17 +32,22 @@ It came with minimal best practice setup so you can add anything fit your need. 
 You can it use to develop `Windows`, `Linux` and `Mac` desktop application. <br />
 But Tauri plan to have a mobile compatibility in the futur !
 
-## 💡 Features
+## ✨ Key Features
+Nextauri integrates community-endorsed best practices with powerful tooling out of the box:
 
-As recommanded by the community, Nextauri come with the best practice features such as :
+### Code Quality Assurance
+- Community-recommended ESLint configuration for Next.js projects
+- Rust best practices enforced through Clippy linter for Tauri
 
--   Recommanded Eslint when working with Next.js
--   Recommanded Clippy when working with Tauri
--   Github workflow when pushing and creating pull request for :
-    * Lint your Next.JS project with Eslint
-    * Lint your Tauri project with Clippy
-    * Build your application for `Linux`, `Windows` and `Mac`
--   Weekly dependencies update
+### Automated CI/CD Pipeline
+- GitHub Actions workflows that trigger on pushing and creating pull request:
+  - Next.js project linting with ESLint
+  - Tauri project analysis with Clippy
+  - Production builds for all platforms:
+    • Linux • Windows • macOS
+
+### Maintenance Automation
+- Automated weekly dependency updates keeping your stack fresh
 
 ## 💪 Motivation
 
