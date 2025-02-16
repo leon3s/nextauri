@@ -44,7 +44,7 @@ jobs:
       - name: Install Node.js v20 LTS
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Install Rust with Clippy
         uses: dtolnay/rust-toolchain@stable
@@ -55,7 +55,9 @@ jobs:
         if: matrix.os == 'ubuntu-latest'
         run: |
           sudo apt-get update
-          sudo apt-get install javascriptcoregtk-4.1 libsoup-3.0 webkit2gtk-4.1 -y
+          sudo apt install --reinstall ca-certificates
+          sudo update-ca-certificates -f
+          sudo apt-get install javascriptcoregtk-4.1 libsoup-3.0 webkit2gtk-4.1 libayatana-appindicator3-dev librsvg2-dev -y
 
       - name: Install node dependencies
         run: npm install
