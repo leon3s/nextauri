@@ -27,7 +27,7 @@
     "@tauri-apps/cli": "^2.2.7",
     "@types/node": "^22.13.4",
     "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.3",
+    "@types/react-dom": "^19.0.4",
     "eslint": "^9.20.1",
     "eslint-config-next": "^15.1.7",
     "typescript": "^5.7.3"
